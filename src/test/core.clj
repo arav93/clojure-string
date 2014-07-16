@@ -1,0 +1,10 @@
+(ns test.core)
+
+( require '[clojure.core.typed :as t])
+(t/ann ^:no-check clojure.string/blank? [java.lang.String -> Boolean])
+(t/ann ^:no-check clojure.string/capitalize [java.lang.String -> java.lang.String])
+(t/ann ^:no-check clojure.string/lower-case [java.lang.String -> java.lang.String])
+(t/ann ^:no-check clojure.string/replace [java.lang.String -> java.lang.String])
+(t/ann ^:no-check clojure.string/reverse [java.lang.String -> java.lang.String])
+(t/ann ^:no-check clojure.string/trim [java.lang.String -> java.lang.String])
+(t/ann ^:no-check clojure.string/upper-case [java.lang.String -> java.lang.String])
